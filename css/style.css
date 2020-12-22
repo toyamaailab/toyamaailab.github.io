@@ -43,7 +43,7 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: Georgia, serif;
+	/*font-family: Georgia, serif;*/
 	padding-bottom: 8px;
 	margin: 0;
 }
@@ -142,9 +142,7 @@ div#subtitle {
 	padding-bottom: 0.1em;
 }
 
-em {
-	font-style: italic;
-}
+
 
 strong {
 	font-weight: bold;
@@ -374,7 +372,7 @@ img.eqwl {
 }
 
 table {
-	border: 2px solid black;
+	border: 2px;
 	border-collapse: collapse;
 }
 
