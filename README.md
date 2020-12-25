@@ -40,7 +40,7 @@
         ```
    
      The **note** attribute will generate between date and DOI in the website and **url** attribute is the hyperlink 
-     of the /[PDF/].
+     of the [PDF].
      
      ```
      Shangce Gao, MengChu Zhou, Yirui Wang, Jiujun Cheng, Hanaki Yachi, and Jiahai Wang, "Dendritic 
