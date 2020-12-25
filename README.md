@@ -1,4 +1,4 @@
-## Toyama AI Lab Website Usage
+## Toyama AI Lab Website
 
 - website: https://toyamaailab.github.io/
 - repository: https://github.com/toyamaailab/toyamaailab.github.io/
