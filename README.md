@@ -60,12 +60,16 @@
         title = "An aggregative learning gravitational search algorithm with self-adaptive gravitational constants",
         journal = "Expert Systems with Applications",
         volume = "152, Article ID 113396, 18 pages",
+	       month = "August",
         year = "2020",
         publisher = "Elsevier",
         doi = "10.1016/j.eswa.2020.113396",
         resource = "ALGSA-D30.zip",
-        month = "August",
+        code = "ALGSA-Code.zip",
+        resourcebaidu = "https://pan.baidu.com/s/1viLh2haU9E7nRAJeMEWxxw",
+        codebaidu = "https://pan.baidu.com/s/1F4BKPkz_6DoWkVfEMVPkqw",
+        extraction = "ab12",
         url = "https://www.sciencedirect.com/science/article/abs/pii/S0957417420302207"
-    }
+     }
     ```
-    and upload your file to [resource\\](resource). And it will be generated as an article list with download link in the [sourcedata.html](sourcedata.html)
+    and upload your file to [resource\\](resource). And it will be generated as an article list with download link in the [sourcedata.html](sourcedata.html). **resourcebaidu** and **codebaidu** are used for Baidu Cloud URL, **extraction** is extraction code of Baidu Cloud URL.
