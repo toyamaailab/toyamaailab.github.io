@@ -5,7 +5,8 @@
 
 ### Usage
 
-- Update config/AI_SCIPapers_SCI.bib in the repository to refresh the website. 
+- 1. Update config/AI_SCIPapers_SCI.bib in the repository to refresh the website.
+- 2. Run update.py and upload three new html files to this project.  
 
   **NOTE: The name of updated file must be "AI_SCIPapers_SCI.bib"**
  
