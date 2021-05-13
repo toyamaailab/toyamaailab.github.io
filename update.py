@@ -1,3 +1,4 @@
+#coding:utf-8
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.bibdatabase import BibDatabase, as_text
@@ -18,9 +19,9 @@ bib_database = bibtexparser.load(test_bib_file, parser)
 press_list = [x for x in bib_database.entries if x['ENTRYTYPE'] != 'inpress' ]
 inpress_list = [x for x in bib_database.entries if x['ENTRYTYPE'] == 'inpress']
 
-publications_demo_html = BeautifulSoup(open('./config/publications_demo.html', 'r'))
-data_demo_html = BeautifulSoup(open('./config/sourcedata_demo.html', 'r'))
-index_html = BeautifulSoup(open('index.html', 'r'))
+publications_demo_html = BeautifulSoup(open('./config/publications_demo.html', 'r'), from_encoding='utf-8')
+data_demo_html = BeautifulSoup(open('./config/sourcedata_demo.html', 'r'), from_encoding='utf-8')
+index_html = BeautifulSoup(open('index.html', 'r'), from_encoding='utf-8')
 
 publication_date = publications_demo_html.find(id="update_date")
 publication_date.string = 'Update: ' + str(datetime.date.today())
@@ -30,8 +31,8 @@ data_date.string = 'Update: ' + str(datetime.date.today())
 
 index_date = index_html.find(id="update_date")
 index_date.string = 'Update: ' + str(datetime.date.today())
-with open("index.html", "w") as file:
-    file.write(str(index_html))
+with open("index.html", "w", encoding='utf-8') as file:
+    file.write(index_html.decode('utf8'))
 
 
 press_list = sorted(press_list, key=lambda x: datetime.datetime.strptime('{} {}'.format(x['month'], x['year']), '%B %Y'))[::-1]
@@ -247,8 +248,8 @@ for x in press_list:
     br_tag = publications_demo_html.new_tag('br')
     press_node.append(br_tag)
 
-with open("publications.html", "w") as file:
-    file.write(str(publications_demo_html))
+with open("publications.html", "w", encoding='utf-8') as file:
+    file.write(publications_demo_html.decode('utf8'))
 
 
 data_node = data_demo_html.find(id="data")
@@ -282,8 +283,8 @@ for x in inpress_list + press_list:
     data_node.append(list_tag)
     br_tag = data_demo_html.new_tag('br')
     data_node.append(br_tag)
-with open("sourcedata.html", "w") as file:
-    file.write(str(data_demo_html))
+with open("sourcedata.html", "w", encoding='utf-8') as file:
+    file.write(data_demo_html.decode('utf8'))
     
 # soup = BeautifulSoup(open('../publications.html', 'r'))
 # inpress_node = soup.find(id="inpress")
