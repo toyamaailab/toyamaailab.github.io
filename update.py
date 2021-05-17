@@ -60,18 +60,18 @@ def generate_person(bib_person, demo_html):
         # print(LatexNodes2Text().latex_to_text(name_string))
         name_string = LatexNodes2Text().latex_to_text(name_string)
         
-        if author_index != author_num - 2:
-            connect_symbol = ','
-        else:
-            connect_symbol = ''
+        # if author_index != author_num - 2:
+        #     connect_symbol = ','
+        # else:
+        #     connect_symbol = ''
         
         if 'Shangce Gao' in name_string or 'S Gao' in name_string:
             bold_tag = demo_html.new_tag('b')
-            bold_tag.append(name_string + connect_symbol)
+            bold_tag.append(name_string + ',')
             author_tag.append(bold_tag)
         else:
             text_tag = demo_html.new_tag('span')
-            text_tag.append(name_string + connect_symbol)
+            text_tag.append(name_string + ',')
             author_tag.append(text_tag)
         
         if author_index == author_num - 2:
