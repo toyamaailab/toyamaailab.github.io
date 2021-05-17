@@ -59,17 +59,28 @@ def generate_person(bib_person, demo_html):
         
         # print(LatexNodes2Text().latex_to_text(name_string))
         name_string = LatexNodes2Text().latex_to_text(name_string)
+        
+        if author_index != author_num - 2:
+            connect_symbol = ','
+        else:
+            connect_symbol = ''
+        
         if 'Shangce Gao' in name_string or 'S Gao' in name_string:
             bold_tag = demo_html.new_tag('b')
-            bold_tag.append(name_string)
+            bold_tag.append(name_string + connect_symbol)
             author_tag.append(bold_tag)
         else:
-            author_tag.append(name_string)
+            text_tag = demo_html.new_tag('span')
+            text_tag.append(name_string + connect_symbol)
+            author_tag.append(text_tag)
         
         if author_index == author_num - 2:
-            author_tag.append(', and ')
-        if author_index < author_num - 2:
-            author_tag.append(', ')
+            author_tag.append('and')
+        
+        # if author_index == author_num - 2:
+        #     author_tag.append(', and')
+        # if author_index < author_num - 2:
+        #     author_tag.append(',')
         
         person_string_list.append(LatexNodes2Text().latex_to_text(name_string))
     if len(person_string_list) == 1:
@@ -77,6 +88,7 @@ def generate_person(bib_person, demo_html):
     else:
         person_string = ', '.join(person_string_list[:-1])
         person_string += ', and ' + person_string_list[-1]
+    
     return author_tag
 
 def generate_title(bib_title, demo_html):
@@ -86,7 +98,7 @@ def generate_title(bib_title, demo_html):
 
 def generate_journal(bib_journal, demo_html):
     journal_tag = demo_html.new_tag('span', attrs={'class': 'journal'})
-    journal_tag.append(LatexNodes2Text().latex_to_text(bib_journal))
+    journal_tag.append(LatexNodes2Text().latex_to_text(bib_journal) + ',')
     return journal_tag
 
 def generate_vol_no_page(bib, demo_html):
@@ -95,15 +107,13 @@ def generate_vol_no_page(bib, demo_html):
     data_list = []
     if 'volume' in bib:
         data_list.append('vol.' + bib['volume'])
-        vol_tag.append('vol.' + bib['volume'])
-        # return_string += 'vol.' + bib['volume']
+        vol_tag.append('vol. ' + bib['volume'] + ',')
     if 'number' in bib:
         data_list.append('no.' + bib['number'])
-        vol_tag.append(', no.' + bib['number'])
-        # return_string += ', no.' + bib['number']
+        vol_tag.append('no. ' + bib['number'] + ',')
     if 'pages' in bib:
         data_list.append('pp.' + bib['pages'].replace('--', '-'))
-        vol_tag.append(', pp.' + bib['pages'].replace('--', '-'))
+        vol_tag.append('pp. ' + bib['pages'].replace('--', '-') + ',')
         # return_string += ', pp.' + bib['pages']
     return vol_tag
 
@@ -114,7 +124,7 @@ def generate_date(bib, demo_html):
         date_string += bib['month']
     if 'year' in bib:
         date_string += ' ' + bib['year']
-    date_tag.append(date_string)
+    date_tag.append(date_string + '.')
     return date_tag
 
 def generate_note(bib, demo_html):
@@ -128,21 +138,20 @@ def generate_doi_pdf(bib, demo_html):
     return_string = ''
     if 'doi' in bib:
         return_string += 'DOI: ' + bib['doi']
-        doi_pdf_tag.append('DOI: ' + bib['doi'])
+        if 'url' in bib:
+            doi_pdf_tag.append('DOI: ' + bib['doi'] + ',')
+        else:
+            doi_pdf_tag.append('DOI: ' + bib['doi'] + '.')
     
     other_resource = False
     
     if 'url' in bib:
-        return_string += ', [PDF]'
+        return_string += '[PDF]'
         other_resource = True
-        doi_pdf_tag.append(', ')
+        
         pdf_tag = demo_html.new_tag('a', attrs={'href': bib['url'], 'target': '_blank'})
-        pdf_tag.string = '[PDF]'
+        pdf_tag.string = '[PDF].'
         doi_pdf_tag.append(pdf_tag)
-   
-    if not other_resource:
-        return_string += '.'
-        # resource_tag.append('.')
     
     
     return doi_pdf_tag
@@ -155,32 +164,32 @@ def generate_other_resource(bib, demo_html):
     if 'resource' in bib:
         return_string += ', [Experimental Results DATA]'
         other_resource = True
-        resource_tag.append(', ')
+        # resource_tag.append(', ')
         data_tag = demo_html.new_tag('a', attrs={'href': github_href_root + bib['resource'], 'target': '_blank'})
         data_tag.string = '[Experimental Results DATA]'
         resource_tag.append(data_tag)
     if 'code' in bib:
         return_string += ', [Code]'
         other_resource = True
-        resource_tag.append(', ')
+        # resource_tag.append(', ')
         code_tag =  demo_html.new_tag('a', attrs={'href': github_href_root + bib['code'], 'class': 'code', 'target': '_blank'})
         code_tag.string = '[Code]'
         resource_tag.append(code_tag)
     if 'resourcebaidu' in bib:
         other_resource = True
-        resource_tag.append(', ')
+        # resource_tag.append(', ')
         data_baidu_tag = demo_html.new_tag('a', attrs={'href': bib['resourcebaidu'], 'target': '_blank'})
         data_baidu_tag.string = '[Experimental Results DATA in Baidu Cloud]'
         resource_tag.append(data_baidu_tag)
     if 'codebaidu' in bib:
         other_resource = True
-        resource_tag.append(', ')
+        # resource_tag.append(', ')
         code_baidu_tag = demo_html.new_tag('a', attrs={'href': bib['codebaidu'], 'class': 'code', 'target': '_blank'})
         code_baidu_tag.string = '[Code in Baidu Cloud]'
         resource_tag.append(code_baidu_tag)
     if 'extraction' in bib:
         other_resource = True
-        resource_tag.append(', ')
+        # resource_tag.append(', ')
         ext_tag = demo_html.new_tag('span')
         ext_tag.string = 'Ext Code: ' + bib['extraction']
         resource_tag.append(ext_tag)
@@ -203,15 +212,15 @@ for x in inpress_list:
     note = generate_note(x, publications_demo_html)
     doi_pdf = generate_doi_pdf(x, publications_demo_html)
     list_tag.append(author)
-    list_tag.append(', ')
+    # list_tag.append(', ')
     list_tag.append(title)
     list_tag.append(' ')
     list_tag.append(journal)
-    list_tag.append(', ')
+    # list_tag.append(', ')
     # list_tag.append(vol_no_pages)
     # list_tag.append(', ')
     list_tag.append(date)
-    list_tag.append('. ')
+    # list_tag.append('. ')
     list_tag.append(note)
     list_tag.append(doi_pdf)
     
@@ -232,15 +241,15 @@ for x in press_list:
     note = generate_note(x, publications_demo_html)
     doi_pdf = generate_doi_pdf(x, publications_demo_html)
     list_tag.append(author)
-    list_tag.append(', ')
+    # list_tag.append(', ')
     list_tag.append(title)
     list_tag.append(' ')
     list_tag.append(journal)
-    list_tag.append(', ')
+    # list_tag.append(', ')
     list_tag.append(vol_no_pages)
-    list_tag.append(', ')
+    # list_tag.append(', ')
     list_tag.append(date)
-    list_tag.append('. ')
+    # list_tag.append('. ')
     list_tag.append(note)
     list_tag.append(doi_pdf)
     
@@ -267,16 +276,16 @@ for x in inpress_list + press_list:
         continue
     
     list_tag.append(author)
-    list_tag.append(', ')
+    # list_tag.append(', ')
     list_tag.append(title)
     list_tag.append(' ')
     list_tag.append(journal)
-    list_tag.append(', ')
+    # list_tag.append(', ')
     if x['ENTRYTYPE'] != 'inpress':
         list_tag.append(vol_no_pages)
-        list_tag.append(', ')
+        # list_tag.append(', ')
     list_tag.append(date)
-    list_tag.append('. ')
+    # list_tag.append('. ')
     list_tag.append(doi_pdf)
     list_tag.append(other_resource)
     
