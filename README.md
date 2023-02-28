@@ -6,7 +6,7 @@
 ### Usage
 
 1. Update config/AI_SCIPapers_SCI.bib in the repository to refresh the website.
-2. Run update.py and upload three new html files to this project.  
+2. Run update.py and upload four new html files to this project.  
 
   **NOTE: The name of updated file must be "AI_SCIPapers_SCI.bib"**
  
@@ -27,7 +27,8 @@
             publisher = "IEEE",
             doi = "10.1109/TNNLS.2018.2846646",
             month = "February",
-            url = "https://ieeexplore.ieee.org/document/8409490"
+            url = "https://ieeexplore.ieee.org/document/8409490",
+	    highlight="true"
         }
         @inpress{cheng2020dynamic,
             author = "Cheng, Jiujun and Cao, Chunrong and Zhou, Mengchu and Liu, Cong and Gao*, Shangce and Jiang, Changjun",
@@ -36,7 +37,8 @@
             year = "2020",
             publisher = "IEEE",
             doi = "10.1109/JIOT.2020.3039775",
-            url = "https://ieeexplore.ieee.org/document/9266057"
+            url = "https://ieeexplore.ieee.org/document/9266057",
+	    highlight="true"
         }
         ```
    
@@ -60,7 +62,7 @@
         title = "An aggregative learning gravitational search algorithm with self-adaptive gravitational constants",
         journal = "Expert Systems with Applications",
         volume = "152, Article ID 113396, 18 pages",
-	       month = "August",
+        month = "August",
         year = "2020",
         publisher = "Elsevier",
         doi = "10.1016/j.eswa.2020.113396",
@@ -69,7 +71,8 @@
         resourcebaidu = "https://pan.baidu.com/s/1viLh2haU9E7nRAJeMEWxxw",
         codebaidu = "https://pan.baidu.com/s/1F4BKPkz_6DoWkVfEMVPkqw",
         extraction = "ab12",
-        url = "https://www.sciencedirect.com/science/article/abs/pii/S0957417420302207"
+        url = "https://www.sciencedirect.com/science/article/abs/pii/S0957417420302207",
+	highlight="true"
      }
     ```
     and upload your file to [resource\\](resource). And it will be generated as an article list with download link in the [sourcedata.html](sourcedata.html). **resourcebaidu** and **codebaidu** are used for Baidu Cloud URL, **extraction** is extraction code of Baidu Cloud URL.
