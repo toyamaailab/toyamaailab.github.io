@@ -220,35 +220,6 @@ def generate_other_resource(bib, demo_html):
     
     return resource_tag
 
-# write inpress paper to publications html
-inpress_node = publications_demo_html.find(id="inpress") 
-for x in inpress_list:
-    print(x['ID'])
-    list_tag = publications_demo_html.new_tag('li')
-    author = generate_person(x['author'], publications_demo_html)
-    title = generate_title(x['title'], publications_demo_html)
-    journal = generate_journal(x['journal'], publications_demo_html)
-    vol_no_pages = generate_vol_no_page(x, publications_demo_html)
-    date = generate_date(x, publications_demo_html)
-    note = generate_note(x, publications_demo_html)
-    doi_pdf = generate_doi_pdf(x, publications_demo_html)
-    list_tag.append(author)
-    # list_tag.append(', ')
-    list_tag.append(title)
-    list_tag.append(' ')
-    list_tag.append(journal)
-    # list_tag.append(', ')
-    # list_tag.append(vol_no_pages)
-    # list_tag.append(', ')
-    list_tag.append(date)
-    # list_tag.append('. ')
-    list_tag.append(note)
-    list_tag.append(doi_pdf)
-    
-    inpress_node.append(list_tag)
-    br_tag = publications_demo_html.new_tag('br')
-    inpress_node.append(br_tag)
-
 # write press paper to publications html
 press_node = publications_demo_html.find(id="published") 
 for x in press_list:
@@ -277,6 +248,38 @@ for x in press_list:
     press_node.append(list_tag)
     br_tag = publications_demo_html.new_tag('br')
     press_node.append(br_tag)
+
+# write inpress paper to publications html
+inpress_node = publications_demo_html.find(id="inpress")
+inpress_node['start'] = str(len(press_list + inpress_list)) 
+for x in inpress_list:
+    print(x['ID'])
+    list_tag = publications_demo_html.new_tag('li')
+    author = generate_person(x['author'], publications_demo_html)
+    title = generate_title(x['title'], publications_demo_html)
+    journal = generate_journal(x['journal'], publications_demo_html)
+    vol_no_pages = generate_vol_no_page(x, publications_demo_html)
+    date = generate_date(x, publications_demo_html)
+    note = generate_note(x, publications_demo_html)
+    doi_pdf = generate_doi_pdf(x, publications_demo_html)
+    list_tag.append(author)
+    # list_tag.append(', ')
+    list_tag.append(title)
+    list_tag.append(' ')
+    list_tag.append(journal)
+    # list_tag.append(', ')
+    # list_tag.append(vol_no_pages)
+    # list_tag.append(', ')
+    list_tag.append(date)
+    # list_tag.append('. ')
+    list_tag.append(note)
+    list_tag.append(doi_pdf)
+    
+    inpress_node.append(list_tag)
+    br_tag = publications_demo_html.new_tag('br')
+    inpress_node.append(br_tag)
+
+
 
 # generate publication html
 with open("publications.html", "w", encoding='utf-8') as file:
