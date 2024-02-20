@@ -18,7 +18,8 @@ test_bib_file = open(test_bib_path, 'r')
 
 bib_database = bibtexparser.load(test_bib_file, parser)
 
-press_list = [x for x in bib_database.entries if x['ENTRYTYPE'] != 'inpress' ]
+journal_list = [x for x in bib_database.entries if x['ENTRYTYPE'] == 'article']
+conference_list = [x for x in bib_database.entries if x['ENTRYTYPE'] == 'inproceedings']
 inpress_list = [x for x in bib_database.entries if x['ENTRYTYPE'] == 'inpress']
 
 # read demo html file 
@@ -47,7 +48,7 @@ with open("index.html", "w", encoding='utf-8') as file:
 
 # utils functions
 
-press_list = sorted(press_list, key=lambda x: datetime.datetime.strptime('{} {}'.format(x['month'], x['year']), '%B %Y'))[::-1]
+journal_list = sorted(journal_list, key=lambda x: datetime.datetime.strptime('{} {}'.format(x['month'], x['year']), '%B %Y'))[::-1]
 
 def generate_person(bib_person, demo_html):
     person_string_list = []
@@ -112,6 +113,11 @@ def generate_journal(bib_journal, demo_html):
     journal_tag = demo_html.new_tag('span', attrs={'class': 'journal'})
     journal_tag.append(LatexNodes2Text().latex_to_text(bib_journal) + ',')
     return journal_tag
+    
+def generate_conference(bib_booktitle, demo_html):
+    conference_tag = demo_html.new_tag('span', attrs={'class': 'conference'})
+    conference_tag.append(LatexNodes2Text().latex_to_text(bib_booktitle) + ',')
+    return conference_tag
 
 def generate_vol_no_page(bib, demo_html):
     vol_tag = demo_html.new_tag('span', attrs={'class': 'vol'})
@@ -220,9 +226,38 @@ def generate_other_resource(bib, demo_html):
     
     return resource_tag
 
+# write conference paper to publications html
+pub_conference_node = publications_demo_html.find(id="pub_conference")
+for x in conference_list:
+    print(x['ID'])
+    list_tag = publications_demo_html.new_tag('li')
+    author = generate_person(x['author'], publications_demo_html)
+    title = generate_title(x['title'], publications_demo_html)
+    conference = generate_journal(x['booktitle'], publications_demo_html)
+    vol_no_pages = generate_vol_no_page(x, publications_demo_html)
+    date = generate_date(x, publications_demo_html)
+    note = generate_note(x, publications_demo_html)
+    doi_pdf = generate_doi_pdf(x, publications_demo_html)
+    list_tag.append(author)
+    list_tag.append(title)
+    list_tag.append(' in ')
+    list_tag.append(conference)
+    # list_tag.append(', ')
+    list_tag.append(vol_no_pages)
+    # list_tag.append(', ')
+    list_tag.append(date)
+    # list_tag.append('. ')
+    list_tag.append(note)
+    list_tag.append(doi_pdf)
+    
+    pub_conference_node.append(list_tag)
+    br_tag = publications_demo_html.new_tag('br')
+    pub_conference_node.append(br_tag)
+
 # write press paper to publications html
-press_node = publications_demo_html.find(id="published") 
-for x in press_list:
+pub_journal_node = publications_demo_html.find(id="pub_journal") 
+pub_journal_node['start'] = str(len(journal_list + conference_list)) 
+for x in journal_list:
     print(x['ID'])
     list_tag = publications_demo_html.new_tag('li')
     author = generate_person(x['author'], publications_demo_html)
@@ -245,13 +280,13 @@ for x in press_list:
     list_tag.append(note)
     list_tag.append(doi_pdf)
     
-    press_node.append(list_tag)
+    pub_journal_node.append(list_tag)
     br_tag = publications_demo_html.new_tag('br')
-    press_node.append(br_tag)
+    pub_journal_node.append(br_tag)
 
 # write inpress paper to publications html
 inpress_node = publications_demo_html.find(id="inpress")
-inpress_node['start'] = str(len(press_list + inpress_list)) 
+inpress_node['start'] = str(len(journal_list + inpress_list + conference_list)) 
 for x in inpress_list:
     print(x['ID'])
     list_tag = publications_demo_html.new_tag('li')
@@ -287,7 +322,7 @@ with open("publications.html", "w", encoding='utf-8') as file:
 
 # write the paper with data to sourcedata html
 data_node = data_demo_html.find(id="data")
-for x in inpress_list + press_list:
+for x in inpress_list + journal_list:
     print(x['ID'])
     list_tag = data_demo_html.new_tag('li')
     author = generate_person(x['author'], data_demo_html)
@@ -322,10 +357,73 @@ for x in inpress_list + press_list:
 with open("sourcedata.html", "w", encoding='utf-8') as file:
     file.write(data_demo_html.decode('utf8'))
     
+# write conference paper to highlight html
+pub_conference_node = highlights_demo_html.find(id="pub_conference")
+for x in conference_list:
+    print(x['ID'])
+    list_tag = highlights_demo_html.new_tag('li')
+    author = generate_person(x['author'], highlights_demo_html)
+    title = generate_title(x['title'], highlights_demo_html)
+    conference = generate_journal(x['booktitle'], highlights_demo_html)
+    vol_no_pages = generate_vol_no_page(x, highlights_demo_html)
+    date = generate_date(x, highlights_demo_html)
+    note = generate_note(x, highlights_demo_html)
+    doi_pdf = generate_doi_pdf(x, highlights_demo_html)
+    list_tag.append(author)
+    list_tag.append(title)
+    list_tag.append(' in ')
+    list_tag.append(conference)
+    # list_tag.append(', ')
+    list_tag.append(vol_no_pages)
+    # list_tag.append(', ')
+    list_tag.append(date)
+    # list_tag.append('. ')
+    list_tag.append(note)
+    list_tag.append(doi_pdf)
+    
+    pub_conference_node.append(list_tag)
+    br_tag = highlights_demo_html.new_tag('br')
+    pub_conference_node.append(br_tag)
 
-# write the highlight paper to highlights html
-highlight_node =  highlights_demo_html.find(id="highlight")
-for x in inpress_list + press_list:
+# write journal paper to highlight html
+pub_journal_node = highlights_demo_html.find(id="pub_journal") 
+highlight_num = len(conference_list)
+for x in inpress_list + journal_list:
+    print(x['ID'])
+    list_tag = highlights_demo_html.new_tag('li')
+    author = generate_person(x['author'], highlights_demo_html)
+    title = generate_title(x['title'], highlights_demo_html)
+    journal = generate_journal(x['journal'], highlights_demo_html)
+    vol_no_pages = generate_vol_no_page(x, highlights_demo_html)
+    date = generate_date(x, highlights_demo_html)
+    note = generate_note(x, highlights_demo_html)
+    doi_pdf = generate_doi_pdf(x, highlights_demo_html)
+    list_tag.append(author)
+    # list_tag.append(', ')
+    list_tag.append(title)
+    list_tag.append(' ')
+    list_tag.append(journal)
+    # list_tag.append(', ')
+    list_tag.append(vol_no_pages)
+    # list_tag.append(', ')
+    list_tag.append(date)
+    # list_tag.append('. ')
+    list_tag.append(note)
+    list_tag.append(doi_pdf)
+    if not is_highlight(x, highlights_demo_html):  
+        continue
+    else:
+        highlight_num += 1
+    
+    pub_journal_node.append(list_tag)
+    br_tag = highlights_demo_html.new_tag('br')
+    pub_journal_node.append(br_tag)
+pub_journal_node['start'] = str(highlight_num) 
+
+'''
+# write the highlight journal to highlights html
+highlight_node =  highlights_demo_html.find(id="pub_journal")
+for x in inpress_list + journal_list:
     print(x['ID'])
     list_tag = highlights_demo_html.new_tag('li')
     author = generate_person(x['author'], highlights_demo_html)
@@ -354,7 +452,7 @@ for x in inpress_list + press_list:
     highlight_node.append(list_tag)
     br_tag = highlights_demo_html.new_tag('br')
     highlight_node.append(br_tag)
-
+'''
 # generate highlights html
 with open("highlights.html", "w", encoding='utf-8') as file:
     file.write(highlights_demo_html.decode('utf8'))
