@@ -1,0 +1,306 @@
+{
+    "paper0": {
+        "imageSrc": "./image/collections/DNM.jpg",
+        "imageAlt": "Framework Figure",
+        "title": "DNM: Dendritic Neuron Model with Effective Learning Algorithms for Classification, Approximation, and Prediction",
+        "authors": [
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            },
+            {
+                "name": "MengChu Zhou",
+                "link": "https://web.njit.edu/~zhou/"
+            },
+            {
+                "name": "Yirui Wang",
+                "link": "https://scholar.google.com/citations?user=qApJMv8AAAAJ&hl=zh-CN"
+            },
+            {
+                "name": "Jiujun Cheng",
+                "link": null
+            },
+            {
+                "name": "Hanaki Yachi",
+                "link": null
+            },
+            {
+                "name": "Jiahai Wang",
+                "link": null
+            }
+        ],
+        "journal": "IEEE Transactions on Neural Networks and Learning Systems",
+        "date": "Feb. 2019",
+        "intro": "We develop a new dendritic neuron model (DNM) by considering the nonlinearity of synapses, not only for a better understanding of a biological neuronal system but also for providing a more useful method to address the ANN's difficulties of understanding and training. To achieve its better performance for solving problems, six learning algorithms are for the first time used to train it. The experiments on 14 different problems involving classification, approximation, and prediction are conducted by using a multilayer perceptron and the proposed DNM. The results suggest that the proposed learning algorithms are effective and promising for training DNM and thus make DNM more powerful in solving classification, approximation, and prediction problems.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2024/10/10",
+        "paperLink": "https://doi.org/10.1109/TNNLS.2018.2846646",
+        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/BBO-DNM-Data.zip"
+    },
+    "paper1": {
+        "imageSrc": "./image/collections/DSNDE.jpg",
+        "imageAlt": "Framework Figure",
+        "title": "DSNDE: Improving Dendritic Neuron Model with Dynamic Scale-free Network-based Differential Evolution",
+        "authors": [
+            {
+                "name": "Yang Yu",
+                "link": null
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Yirui Wang",
+                "link": "https://scholar.google.com/citations?user=qApJMv8AAAAJ&hl=zh-CN"
+            },
+            {
+                "name": "Tengfei Zhang",
+                "link": null
+            },
+            {
+                "name": "Chen Peng",
+                "link": "https://scholar.google.com/citations?user=57xWzEYAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE/CAA Journal of Automatica Sinica",
+        "date": "Jan. 2022",
+        "intro": "This paper develops a dynamic scale-free network-based differential evolution algorithm (DSNDE) to train the dendritic neuron model (DNM). Through experiments on 14 benchmark datasets and a photovoltaic power forecasting problem, and compared with 9 meta-heuristic algorithms, the effectiveness of DSNDE is verified. The results show that DSNDE has better performance in most cases.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2024/10/10",
+        "paperLink": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2021.1004284",
+        "codeLink": null
+    },
+    "paper2": {
+        "imageSrc": "./image/collections/CDNM.jpg",
+        "imageAlt": "Framework Figure",
+        "title": "CDNM: Fully Complex-valued Dendritic Neuron Model",
+        "authors": [
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            },
+            {
+                "name": "MengChu Zhou",
+                "link": "https://web.njit.edu/~zhou/"
+            },
+            {
+                "name": "Ziqian Wang",
+                "link": "https://scholar.google.com/citations?user=W1WlWS8AAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Daiki Sugiyama",
+                "link": null
+            },
+            {
+                "name": "Jiujun Cheng",
+                "link": null
+            },
+            {
+                "name": "Jiahai Wang",
+                "link": null
+            },
+            {
+                "name": "Yuki Todo",
+                "link": "https://scholar.google.com/citations?user=PfjlE2UAAAAJ&hl=zh-CN&oi=sra"
+            }
+        ],
+        "journal": "IEEE Transactions on Neural Networks and Learning Systems",
+        "date": "Apr. 2023",
+        "intro": "In this article, we first extend DNM from a real-value domain to a complex-valued one. Performance of complex-valued DNM (CDNM) is evaluated through a complex XOR problem, a non-minimum phase equalization problem, and a real-world wind prediction task. Also, a comparative analysis on a set of elementary transcendental functions as an activation function is implemented and preparatory experiments are carried out for determining hyperparameters. The experimental results indicate that the proposed CDNM significantly outperforms real-valued DNM, complex-valued multi-layer perceptron, and other complex-valued neuron models.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2024/10/10",
+        "paperLink": "https://doi.org/10.1109/TNNLS.2021.3105901",
+        "codeLink": null
+    },
+    "paper3": {
+        "imageSrc": "./image/collections/DVT.gif",
+        "imageAlt": "Framework Figure",
+        "title": "DVT: Dendritic Learning-Incorporated Vision Transformer for Image Recognition",
+        "authors": [
+            {
+                "name": "Zhiming Zhang",
+                "link": "https://zhangzm0128.github.io"
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Masaaki Omura",
+                "link": null
+            },
+            {
+                "name": "Hideyuki Hasegawa",
+                "link": null
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE/CAA Journal of Automatica Sinica",
+        "date": "Feb. 2024",
+        "intro": "DVT is an innovative study introducing a Dendritic Learning-incorporated Vision Transformer, specifically designed for universal image recognition tasks inspired by dendritic neurons in neuroscience. The model's architecture incorporates highly biologically interpretable dendritic learning techniques, enabling DVT to excel in handling complex nonlinear classification problems.<br><br>The motivation behind DVT stems from the hypothesis that networks with high biological interpretability in architecture also exhibit superior performance in image recognition tasks. Our experimental results, as outlined in the associated paper, highlight the substantial improvement achieved by DVT compared to the current state-of-the-art methods on four general datasets.",
+        "editor": "Zhiming Zhang",
+        "editDate": "2024/01/19",
+        "paperLink": "https://www.ieee-jas.net/en/article/id/ec6a16fa-d348-417a-af0f-dd734c60439c",
+        "codeLink": "https://github.com/zhangzm0128/DVT"
+    },
+    "paper4": {
+        "imageSrc": "./image/collections/DDNet.png",
+        "imageAlt": "Framework Figure",
+        "title": "DDNet: Dendritic Deep Learning for Medical Segmentation",
+        "authors": [
+            {
+                "name": "Zhipeng Liu",
+                "link": "https://scholar.google.com/citations?hl=zh-CN&user=2r4K18sAAAAJ"
+            },
+            {
+                "name": "Zhiming Zhang",
+                "link": "https://zhangzm0128.github.io"
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Masaaki Omura",
+                "link": null
+            },
+            {
+                "name": "Rong-Long Wang",
+                "link": null
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE/CAA Journal of Automatica Sinica",
+        "date": "Mar. 2024",
+        "intro": "DDNet is a novel network that integrates biologically interpretable dendritic neurons and employs deep supervision during training to enhance the model's efficacy. To evaluate the effectiveness of the proposed methodology, comparative trials were conducted on datasets STU, Polyp, and DatasetB. The experiments demonstrate the superiority of the proposed approach.",
+        "editor": "Zhiming Zhang",
+        "editDate": "2024/01/19",
+        "paperLink": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2023.123813",
+        "codeLink": "https://github.com/lzp990616/DDNet"
+    },
+    "paper5": {
+        "imageSrc": "./image/collections/MDPN.gif",
+        "imageAlt": "Framework Figure",
+        "title": "MDPN: A Lightweight Multi-Dendritic Pyramidal Neuron Model with Neural Plasticity on Image Recognition",
+        "authors": [
+            {
+                "name": "Yu Zhang",
+                "link": "https://github.com/zy-251026"
+            },
+            {
+                "name": "Pengxing Cai",
+                "link": null
+            },
+            {
+                "name": "Yanan Sun",
+                "link": "https://scholar.google.com/citations?user=kqErKX4AAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Zhiming Zhang",
+                "link": "https://zhangzm0128.github.io"
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE Transactions on Artificial Intelligence",
+        "date": "Sep. 2024",
+        "intro": "MDPN is a lightweight neural network architecture that simulates the dendritic structure of pyramidal neurons to improve image representation, emphasizing nonlinear dendritic computation and neuroplasticity. In comparison with the traditional feedforward network model, MDPN focused on the importance of a single neuron and redefined the function of each subcomponent. Experimental results verify the effectiveness and robustness of our proposed MDPN on 16 standardized image datasets.",
+        "editor": "Yu Zhang",
+        "editDate": "2024/05/27",
+        "paperLink": "https://doi.org/10.1109/TAI.2024.3379968",
+        "codeLink": "https://github.com/zy-251026/MDPN"
+    },
+    "paper6": {
+        "imageSrc": "./image/collections/ADNS.png",
+        "imageAlt": "Framework Figure",
+        "title": "ADNS: Alternating Excitation-Inhibition Dendritic Computing for Classification",
+        "authors": [
+            {
+                "name": "Jiayi Li",
+                "link": "https://scholar.google.com/citations?user=EXub-h4AAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Zhiming Zhang",
+                "link": "https://zhangzm0128.github.io"
+            },
+            {
+                "name": "Haotian Li",
+                "link": null
+            },
+            {
+                "name": "Yuki Todo",
+                "link": "https://scholar.google.com/citations?user=PfjlE2UAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE Transactions on Artificial Intelligence",
+        "date": "Jun. 2024",
+        "intro": "The ADNS is a novel neural network architecture that emulates the excitation and inhibition mechanisms found in biological neurons. This enhancement boosts the feature extraction and nonlinear computation capabilities of individual neurons, enabling them to construct multi-layer networks and making deep dendritic neuron models feasible. Experimental results show that our proposed ADNS significantly outperforms traditional models on 47 feature classification datasets and two image classification datasets, CIFAR-10 and CIFAR-100.",
+        "editor": "Jiayi Li",
+        "editDate": "2024/10/10",
+        "paperLink": "https://doi.org/10.1109/TAI.2024.3416236",
+        "codeLink": "https://github.com/Rirock/ADNS"
+    },
+    "paper7": {
+        "imageSrc": "./image/collections/QDNM.jpg",
+        "imageAlt": "Framework Figure",
+        "title": "QDNM: Quaternion Dendritic Neuron Model for Multivariate Financial Time Series Prediction",
+        "authors": [
+            {
+                "name": "Qianrui Yu",
+                "link": null
+            },
+            {
+                "name": "Zihang Zhang",
+                "link": null
+            },
+            {
+                "name": "Ziqian Wang",
+                "link": "https://scholar.google.com/citations?user=W1WlWS8AAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Haotian Li",
+                "link": null
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+        "date": "Oct. 2024",
+        "intro": "Quaternion dendritic neuron model (QDNM) is a novel neuron model that can be applied to multivariate time-series prediction. It generalizes the original DNM model to the quaternion domain, combining the dendrite-like nonlinear calculation capabilities of DNMs with multidimensional feature integration and analysis capabilities of quaternion encoding to make the proposed model suitable to multivariate prediction tasks. And the BP algorithm for the model is derived in the framework of the quaternion algebra.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2024/10/19",
+        "paperLink": null,
+        "codeLink": null
+    }
+}
