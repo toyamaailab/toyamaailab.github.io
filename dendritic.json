@@ -35,7 +35,7 @@
         "editor": "Zhenyu Lei",
         "editDate": "2024/10/10",
         "paperLink": "https://doi.org/10.1109/TNNLS.2018.2846646",
-        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/BBO-DNM-Data.zip"
+        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DNM_Code.zip"
     },
     "paper1": {
         "imageSrc": "./image/collections/DSNDE.jpg",
@@ -73,7 +73,7 @@
         "editor": "Zhenyu Lei",
         "editDate": "2024/10/10",
         "paperLink": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2021.1004284",
-        "codeLink": null
+        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DSNDE_Code.zip"
     },
     "paper2": {
         "imageSrc": "./image/collections/CDNM.jpg",
