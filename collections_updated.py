@@ -29,10 +29,8 @@ def generate_related_work(research_data):
 
       
     research_data = {k: v for k, v in research_data.items() if k != 'date'}
-    index, _ = get_paper_order(research_data)
-    for i in index:
-         print(f"Generating html of Paper{i}: ",research_data[i]['title'])
-         
+    paper_index, _ = get_paper_order(research_data)
+            
 
 
     # Start building HTML
@@ -48,7 +46,7 @@ def generate_related_work(research_data):
     """
 
     ## Add the related works' papers.
-    for i, index in enumerate(research_data):
+    for i, index in enumerate(paper_index):
          html_content += f"""
             <!-- paper items -->
             <div class="text-gray-600 text-base mb-4">

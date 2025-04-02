@@ -99,6 +99,22 @@
             "date": "Jun. 2020",
             "doi":"https://doi.org/10.1038/s41565-020-0722-5"
         },
+        "paper13":{
+            "authors":"Alexandre Payeur, et al.",
+            "title":"Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits",
+            "journal":"Nature Neuroscience",
+            "vol":"24(1): pp. 1010-1019, 2021",
+            "date": "May. 2021",
+            "doi":"https://doi.org/10.1038/s41593-021-00857-x"
+        },
+        "paper14":{
+            "authors":"Simone D'Agostino, et al.",
+            "title":"DenRAM: neuromorphic dendritic architecture with RRAM for efficient temporal processing with delays",
+            "journal":"Nature Communications",
+            "vol":"15(1): p. 3446, 2024",
+            "date": "Apr. 2024",
+            "doi":"https://doi.org/10.1038/s41467-024-47764-w"
+        },
         "date": "Feb. 2000"
         
     },
