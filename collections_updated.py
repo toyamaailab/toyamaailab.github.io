@@ -2,6 +2,12 @@ import json
 from bs4 import BeautifulSoup
 from datetime import datetime,date
 
+
+
+
+
+
+
 # Convert Jun. 2023 to num. for sort.
 def parse_date(date_str):
     return datetime.strptime(date_str, "%b. %Y")
@@ -9,13 +15,55 @@ def parse_date(date_str):
 # Sort paper by publication date
 def get_paper_order(paper_data):
     time_list = [paper_data[x]['date'] for x in paper_data]
+
+    name_list = [x for x in paper_data]
     dates_with_index = list(enumerate(time_list))
     sorted_dates_with_index = sorted(dates_with_index, key=lambda x: parse_date(x[1]),reverse=True)
     paper_index = [index for index, _ in sorted_dates_with_index]
     paper_data = [data for _, data in sorted_dates_with_index]
-    return paper_index, paper_data
+    index  = [name_list[x] for x in paper_index]
+    return index, paper_data
 
 # Generating html file
+def generate_related_work(research_data):
+
+      
+    research_data = {k: v for k, v in research_data.items() if k != 'date'}
+    index, _ = get_paper_order(research_data)
+    for i in index:
+         print(f"Generating html of Paper{i}: ",research_data[i]['title'])
+         
+
+
+    # Start building HTML
+    html_content = f"""
+    <!-- Related Work -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <!-- Paper Title -->
+        <h3 class="text-2xl font-semibold mb-2 text-gray-900">
+            Related Works
+        </h3>
+        <!-- Related Works  -->
+        <div class="text-gray-600 text-sm mb-4">
+    """
+
+    ## Add the related works' papers.
+    for i, index in enumerate(research_data):
+         html_content += f"""
+            <!-- paper items -->
+            <div class="text-gray-600 text-base mb-4">
+            [{i+1}] {research_data[index]["authors"]},
+            <span class="font-semibold">"{research_data[index]['title']}"</span>
+            <span class="italic"> {research_data[index]['journal']},</span>
+            {research_data[index]['vol']}.
+            <a class="text-blue-600 text-lg bg-blue-100 rounded-md px-3 py-1 mr-1 hover:bg-blue-200" href="{research_data[index]["doi"]}" target="_blank"><i class="fas fa-solid fa-book-open"></i> Paper </a>
+        </div>
+         """
+
+
+    return html_content
+
+
 def generate_html(research_data):
     # Start building HTML
     html_content = f"""
@@ -118,12 +166,29 @@ times.string = 'Update: ' + str(date.today())
 research_items_container = soup.find("div", id="items")
 for i in paper_index:
     # put the new item into html
-    print(f"Generating html of Paper{i}:",Paper_data[f"paper{i}"]['title'])
-    new_research_item = generate_html(Paper_data[f"paper{i}"])
+    
+    
+    if i == "related_work":
+        print(f"Generating html of related_work")
+        new_research_item = generate_related_work(Paper_data[i])
+    else:
+        print(f"Generating html of Paper{i}: ",Paper_data[i]['title'])
+        new_research_item = generate_html(Paper_data[i])
+
     research_items_container.append(BeautifulSoup(new_research_item, "html.parser"))
 
+
+# ## updating items of papers.
+# # Finding iterms  containers
+# research_items_container = soup.find("div", id="items")
+# for i in paper_index:
+#     # put the new item into html
+#     print(f"Generating html of Paper{i}:",Paper_data[f"paper{i}"]['title'])
+#     new_research_item = generate_html(Paper_data[f"paper{i}"])
+#     research_items_container.append(BeautifulSoup(new_research_item, "html.parser"))
+
 # Save the updated html page.
-with open("./collections.html", "w", encoding="utf-8") as file:
+with open("./collections1.html", "w", encoding="utf-8") as file:
     file.write(str(soup))
 
 
