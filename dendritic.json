@@ -57,7 +57,7 @@
             "doi":"https://doi.org/10.1038/s41583-020-00395-8"
         },
         "paper8":{
-            "authors":"J. Göltz, et al.",
+            "authors":"J. G{\"o}ltz, et al.",
             "title":"Fast and energy-efficient neuromorphic deep learning with first-spike times",
             "journal":"Nature Machine Intelligence",
             "vol":"3(9): pp. 823-835, 2021",
