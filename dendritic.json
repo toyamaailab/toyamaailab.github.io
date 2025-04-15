@@ -83,7 +83,7 @@
         },
         
         "paper11":{
-            "authors":"Stanisław Woźniak, et al.",
+            "authors":"Stanis{\l}aw Wo{\'z}niak, et al.",
             "title":"Deep learning incorporating biologically inspired neural dynamics and in-memory computing",
             "journal":"Nature Machine Intelligence",
             "vol":"2(6): pp. 325-336, 2020",
@@ -114,6 +114,14 @@
             "vol":"15(1): p. 3446, 2024",
             "date": "Apr. 2024",
             "doi":"https://doi.org/10.1038/s41467-024-47764-w"
+        },
+		"paper15":{
+            "authors":"Poirazi, P. and A. Papoutsi",
+            "title":"Illuminating dendritic function with computational models",
+            "journal":"Nature Reviews Neuroscience",
+            "vol":"21(6): pp. 303-321, 2020",
+            "date": "May. 2020",
+            "doi":"https://www.nature.com/articles/s41583-020-0301-7"
         },
         "date": "Feb. 2000"
         
@@ -458,7 +466,7 @@
         "intro": "This paper proposes GGDNM, a hybrid deep learning model combining Graph Convolutional Networks (GCN), Gated Recurrent Units (GRU), and a Dendritic Neuron Model (DNM) for short-term load forecasting. By modeling time-series load data as a graph, GGDNM captures spatial-temporal dependencies and leverages biological neuron-inspired nonlinearity. Experiments on national and regional datasets show GGDNM achieves superior accuracy and generalization over existing models.",
         "editor": "Zhenyu Lei",
         "editDate": "2025/04/01",
-        "paperLink": null,
-        "codeLink": null
+        "paperLink": "https://ieeexplore.ieee.org/document/10949863",
+        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/TNSE_Code.zip"
     }
 }
