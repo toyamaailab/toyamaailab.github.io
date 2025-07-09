@@ -57,7 +57,7 @@
             "doi":"https://doi.org/10.1038/s41583-020-00395-8"
         },
         "paper8":{
-            "authors":"J. G{\"o}ltz, et al.",
+            "authors":"J. Goltz, et al.",
             "title":"Fast and energy-efficient neuromorphic deep learning with first-spike times",
             "journal":"Nature Machine Intelligence",
             "vol":"3(9): pp. 823-835, 2021",
@@ -83,7 +83,7 @@
         },
         
         "paper11":{
-            "authors":"Stanis{\l}aw Wo{\'z}niak, et al.",
+            "authors":"Stanislaw Wozniak, et al.",
             "title":"Deep learning incorporating biologically inspired neural dynamics and in-memory computing",
             "journal":"Nature Machine Intelligence",
             "vol":"2(6): pp. 325-336, 2020",
@@ -163,7 +163,8 @@
         "editor": "Zhenyu Lei",
         "editDate": "2024/10/10",
         "paperLink": "https://doi.org/10.1109/TNNLS.2018.2846646",
-        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DNM_Code.zip"
+        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DNM_Code.zip",
+        "BibTex":"DNM.bib"
     },
     "DSNDE": {
         "imageSrc": "./image/collections/DSNDE.jpg",
@@ -201,7 +202,8 @@
         "editor": "Zhenyu Lei",
         "editDate": "2024/10/10",
         "paperLink": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2021.1004284",
-        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DSNDE_Code.zip"
+        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DSNDE_Code.zip",
+        "BibTex":"DSNDE.bib"
     },
     "CDNM": {
         "imageSrc": "./image/collections/CDNM.jpg",
@@ -243,7 +245,8 @@
         "editor": "Zhenyu Lei",
         "editDate": "2024/10/10",
         "paperLink": "https://doi.org/10.1109/TNNLS.2021.3105901",
-        "codeLink": null
+        "codeLink": null,
+        "BibTex":"CDNM.bib"
     },
     "DVT": {
         "imageSrc": "./image/collections/DVT.gif",
@@ -277,7 +280,8 @@
         "editor": "Zhiming Zhang",
         "editDate": "2024/01/19",
         "paperLink": "https://www.ieee-jas.net/en/article/id/ec6a16fa-d348-417a-af0f-dd734c60439c",
-        "codeLink": "https://github.com/zhangzm0128/DVT"
+        "codeLink": "https://github.com/zhangzm0128/DVT",
+        "BibTex":"DVT.bib"
     },
     "DDNet": {
         "imageSrc": "./image/collections/DDNet.png",
@@ -315,7 +319,8 @@
         "editor": "Zhiming Zhang",
         "editDate": "2024/01/19",
         "paperLink": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2023.123813",
-        "codeLink": "https://github.com/lzp990616/DDNet"
+        "codeLink": "https://github.com/lzp990616/DDNet",
+        "BibTex":"DDNet.bib"
     },
     "MDPN": {
         "imageSrc": "./image/collections/MDPN.gif",
@@ -353,7 +358,8 @@
         "editor": "Yu Zhang",
         "editDate": "2024/05/27",
         "paperLink": "https://doi.org/10.1109/TAI.2024.3379968",
-        "codeLink": "https://github.com/zy-251026/MDPN"
+        "codeLink": "https://github.com/zy-251026/MDPN",
+        "BibTex":"MDPN.bib"
     },
     "ADNS": {
         "imageSrc": "./image/collections/ADNS.png",
@@ -391,7 +397,9 @@
         "editor": "Jiayi Li",
         "editDate": "2024/10/10",
         "paperLink": "https://doi.org/10.1109/TAI.2024.3416236",
-        "codeLink": "https://github.com/Rirock/ADNS"
+        "codeLink": "https://github.com/Rirock/ADNS",
+        "BibTex":"ADNS.bib"
+        
     },
     "QDNM": {
         "imageSrc": "./image/collections/QDNM.jpg",
@@ -429,7 +437,8 @@
         "editor": "Zhenyu Lei",
         "editDate": "2024/12/25",
         "paperLink": "https://doi.org/10.1109/TETCI.2024.3485728",
-        "codeLink": null
+        "codeLink": null,
+        "BibTex":"QDNM.bib"
     },
     "GGDNM": {
         "imageSrc": "./image/collections/GGDNM.jpg",
@@ -467,6 +476,7 @@
         "editor": "Zhenyu Lei",
         "editDate": "2025/04/01",
         "paperLink": "https://ieeexplore.ieee.org/document/10949863",
-        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/TNSE_Code.zip"
+        "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/TNSE_Code.zip",
+        "BibTex":"GGDNM.bib"
     }
 }
