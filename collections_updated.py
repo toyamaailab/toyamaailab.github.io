@@ -122,10 +122,16 @@ def generate_html(research_data):
             </div>
         """
     # <!-- Paper and code link -->
+    html_content += """<!-- BibTex, Paper and code link -->
+            <div class="flex">"""
+    if "BibTex" in research_data:
+            html_content += f"""
+                <a class="text-blue-600 text-lg bg-blue-100 rounded-md px-5 py-1 mr-2 hover:bg-blue-200"
+                    target="_blank"
+                    href="https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/bib/{research_data['BibTex']}"><i class="fas fa-eye"></i> BibTex </a>
+            """
     if research_data['paperLink']:
             html_content += f"""
-            <!-- Paper and code link -->
-            <div class="flex">
                 <a class="text-blue-600 text-lg bg-blue-100 rounded-md px-5 py-1 mr-2 hover:bg-blue-200"
                     target="_blank"
                     href="{research_data['paperLink']}"><i class="fas fa-solid fa-book-open"></i> Paper </a>
