@@ -514,7 +514,7 @@
             }
         ],
         "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
-        "date": "Oct. 2025",
+        "date": "Dec. 2025",
         "intro": "This paper proposes a novel Dendritic Kernel Convolution (D-convolution) module inspired by the nonlinear excitatory and inhibitory mechanisms of biological dendrites. Integrated into a three-stage network (DKNet), it mimics the human visual system’s coarse-to-fine processing for breast ultrasound image segmentation. D-convolution enhances feature representation, suppresses noise, and enables more precise boundary detection by modeling synaptic thresholds and multi-branch dendritic integration. Experimental results on public datasets show that DKNet outperforms state-of-the-art methods in accuracy, robustness, and segmentation quality. These findings demonstrate the potential of biologically inspired architectures for challenging medical imaging tasks.",
         "editor": "Zhenyu Lei",
         "editDate": "2025/10/15",
