@@ -28,6 +28,8 @@ highlights_demo_html = BeautifulSoup(open('./config/highlights_demo.html', 'r'),
 data_demo_html = BeautifulSoup(open('./config/sourcedata_demo.html', 'r'), from_encoding='utf-8')
 
 index_html = BeautifulSoup(open('index.html', 'r'), from_encoding='utf-8')
+#index_html = BeautifulSoup(open('index.html', 'r', encoding='utf-8'), 'html.parser')
+
 
 # update date to html
 publication_date = publications_demo_html.find(id="update_date")
@@ -42,8 +44,9 @@ highlights_date.string = 'Update: ' + str(datetime.date.today())
 
 index_date = index_html.find(id="update_date")
 index_date.string = 'Update: ' + str(datetime.date.today())
+print(index_html)
 with open("index.html", "w", encoding='utf-8') as file:
-    file.write(index_html.decode('utf8'))
+    file.write(str(index_html))
 
 
 # utils functions
@@ -318,7 +321,7 @@ for x in inpress_list:
 
 # generate publication html
 with open("publications.html", "w", encoding='utf-8') as file:
-    file.write(publications_demo_html.decode('utf8'))
+    file.write(str(publications_demo_html))
 
 # write the paper with data to sourcedata html
 data_node = data_demo_html.find(id="data")
@@ -355,7 +358,7 @@ for x in inpress_list + journal_list:
     
 # generate sourcedata html
 with open("sourcedata.html", "w", encoding='utf-8') as file:
-    file.write(data_demo_html.decode('utf8'))
+    file.write(str(data_demo_html))
     
 # write conference paper to highlight html
 pub_conference_node = highlights_demo_html.find(id="pub_conference")
@@ -455,7 +458,7 @@ for x in inpress_list + journal_list:
 '''
 # generate highlights html
 with open("highlights.html", "w", encoding='utf-8') as file:
-    file.write(highlights_demo_html.decode('utf8'))
+    file.write(str(highlights_demo_html))
     
     
 # soup = BeautifulSoup(open('../publications.html', 'r'))
