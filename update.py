@@ -14,20 +14,21 @@ from pylatexenc.latex2text import LatexNodes2Text
 parser = BibTexParser(ignore_nonstandard_types = False)
 github_href_root = 'https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/'
 test_bib_path = './config/AI_SCIPapers_SCI.bib'
-test_bib_file = open(test_bib_path, 'r')
-
-bib_database = bibtexparser.load(test_bib_file, parser)
+# test_bib_file = open(test_bib_path, 'r')
+# bib_database = bibtexparser.load(test_bib_file, parser)
+with open(test_bib_path, 'r',encoding='utf-8') as test_bib_file:
+    bib_database = bibtexparser.load(test_bib_file, parser)
 
 journal_list = [x for x in bib_database.entries if x['ENTRYTYPE'] == 'article']
 conference_list = [x for x in bib_database.entries if x['ENTRYTYPE'] == 'inproceedings']
 inpress_list = [x for x in bib_database.entries if x['ENTRYTYPE'] == 'inpress']
 
 # read demo html file 
-publications_demo_html = BeautifulSoup(open('./config/publications_demo.html', 'r'), from_encoding='utf-8')
-highlights_demo_html = BeautifulSoup(open('./config/highlights_demo.html', 'r'), from_encoding='utf-8')
-data_demo_html = BeautifulSoup(open('./config/sourcedata_demo.html', 'r'), from_encoding='utf-8')
+publications_demo_html = BeautifulSoup(open('./config/publications_demo.html', 'r',encoding='utf-8'), from_encoding='utf-8')
+highlights_demo_html = BeautifulSoup(open('./config/highlights_demo.html', 'r',encoding='utf-8'), from_encoding='utf-8')
+data_demo_html = BeautifulSoup(open('./config/sourcedata_demo.html', 'r',encoding='utf-8'), from_encoding='utf-8')
 
-index_html = BeautifulSoup(open('index.html', 'r'), from_encoding='utf-8')
+index_html = BeautifulSoup(open('index.html', 'r',encoding='utf-8'), from_encoding='utf-8')
 #index_html = BeautifulSoup(open('index.html', 'r', encoding='utf-8'), 'html.parser')
 
 
@@ -46,7 +47,7 @@ index_date = index_html.find(id="update_date")
 index_date.string = 'Update: ' + str(datetime.date.today())
 print(index_html)
 with open("index.html", "w", encoding='utf-8') as file:
-    file.write(str(index_html))
+    file.write(index_html.prettify())
 
 
 # utils functions
@@ -321,7 +322,8 @@ for x in inpress_list:
 
 # generate publication html
 with open("publications.html", "w", encoding='utf-8') as file:
-    file.write(str(publications_demo_html))
+    file.write(publications_demo_html.prettify())
+    
 
 # write the paper with data to sourcedata html
 data_node = data_demo_html.find(id="data")
@@ -358,7 +360,7 @@ for x in inpress_list + journal_list:
     
 # generate sourcedata html
 with open("sourcedata.html", "w", encoding='utf-8') as file:
-    file.write(str(data_demo_html))
+    file.write(data_demo_html.prettify())
     
 # write conference paper to highlight html
 pub_conference_node = highlights_demo_html.find(id="pub_conference")
@@ -458,7 +460,7 @@ for x in inpress_list + journal_list:
 '''
 # generate highlights html
 with open("highlights.html", "w", encoding='utf-8') as file:
-    file.write(str(highlights_demo_html))
+    file.write(highlights_demo_html.prettify())
     
     
 # soup = BeautifulSoup(open('../publications.html', 'r'))
