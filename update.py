@@ -327,12 +327,15 @@ with open("publications.html", "w", encoding='utf-8') as file:
 
 # write the paper with data to sourcedata html
 data_node = data_demo_html.find(id="data")
-for x in inpress_list + journal_list:
+for x in inpress_list + journal_list+conference_list:
     print(x['ID'])
     list_tag = data_demo_html.new_tag('li')
     author = generate_person(x['author'], data_demo_html)
     title = generate_title(x['title'], data_demo_html)
-    journal = generate_journal(x['journal'], data_demo_html)
+    if x in inpress_list or x in journal_list:
+        journal = generate_journal(x['journal'], data_demo_html)
+    elif x in conference_list:
+        journal = generate_conference(x['booktitle'], data_demo_html)
     vol_no_pages = generate_vol_no_page(x, data_demo_html)
     date = generate_date(x, data_demo_html)
     doi_pdf = generate_doi_pdf(x, data_demo_html)
