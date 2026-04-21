@@ -130,7 +130,7 @@
     "DNM": {
         "imageSrc": "./image/collections/DNM.jpg",
         "imageAlt": "Framework Figure",
-        "title": "DNM: Dendritic Neuron Model with Effective Learning Algorithms for Classification, Approximation, and Prediction",
+        "title": "Dendritic Neuron Model with Effective Learning Algorithms for Classification, Approximation, and Prediction",
         "authors": [
             {
                 "name": "Shangce Gao",
@@ -169,7 +169,7 @@
     "DSNDE": {
         "imageSrc": "./image/collections/DSNDE.jpg",
         "imageAlt": "Framework Figure",
-        "title": "DSNDE: Improving Dendritic Neuron Model with Dynamic Scale-free Network-based Differential Evolution",
+        "title": "Improving Dendritic Neuron Model with Dynamic Scale-free Network-based Differential Evolution",
         "authors": [
             {
                 "name": "Yang Yu",
@@ -208,7 +208,7 @@
     "CDNM": {
         "imageSrc": "./image/collections/CDNM.jpg",
         "imageAlt": "Framework Figure",
-        "title": "CDNM: Fully Complex-valued Dendritic Neuron Model",
+        "title": "Fully Complex-valued Dendritic Neuron Model",
         "authors": [
             {
                 "name": "Shangce Gao",
@@ -251,7 +251,7 @@
     "DVT": {
         "imageSrc": "./image/collections/DVT.gif",
         "imageAlt": "Framework Figure",
-        "title": "DVT: Dendritic Learning-Incorporated Vision Transformer for Image Recognition",
+        "title": "Dendritic Learning-Incorporated Vision Transformer for Image Recognition",
         "authors": [
             {
                 "name": "Zhiming Zhang",
@@ -286,7 +286,7 @@
     "DDNet": {
         "imageSrc": "./image/collections/DDNet.png",
         "imageAlt": "Framework Figure",
-        "title": "DDNet: Dendritic Deep Learning for Medical Segmentation",
+        "title": "Dendritic Deep Learning for Medical Segmentation",
         "authors": [
             {
                 "name": "Zhipeng Liu",
@@ -325,7 +325,7 @@
     "MDPN": {
         "imageSrc": "./image/collections/MDPN.gif",
         "imageAlt": "Framework Figure",
-        "title": "MDPN: A Lightweight Multi-Dendritic Pyramidal Neuron Model with Neural Plasticity on Image Recognition",
+        "title": "A Lightweight Multi-Dendritic Pyramidal Neuron Model with Neural Plasticity on Image Recognition",
         "authors": [
             {
                 "name": "Yu Zhang",
@@ -364,7 +364,7 @@
     "ADNS": {
         "imageSrc": "./image/collections/ADNS.png",
         "imageAlt": "Framework Figure",
-        "title": "ADNS: Alternating Excitation-Inhibition Dendritic Computing for Classification",
+        "title": "Alternating Excitation-Inhibition Dendritic Computing for Classification",
         "authors": [
             {
                 "name": "Jiayi Li",
@@ -404,7 +404,7 @@
     "QDNM": {
         "imageSrc": "./image/collections/QDNM.jpg",
         "imageAlt": "Framework Figure",
-        "title": "QDNM: Quaternion Dendritic Neuron Model for Multivariate Financial Time Series Prediction",
+        "title": "Quaternion Dendritic Neuron Model for Multivariate Financial Time Series Prediction",
         "authors": [
             {
                 "name": "Qianrui Yu",
@@ -443,7 +443,7 @@
     "GGDNM": {
         "imageSrc": "./image/collections/GGDNM.jpg",
         "imageAlt": "Framework Figure",
-        "title": "GGDNM: Short-Term Load Forecasting Based on Graph Convolution and Dendritic Deep Learning",
+        "title": "Short-Term Load Forecasting Based on Graph Convolution and Dendritic Deep Learning",
         "authors": [
             {
                 "name": "Chunyang Zhang",
@@ -482,7 +482,7 @@
     "DKNet": {
         "imageSrc": "./image/collections/DKNet.png",
         "imageAlt": "Framework Figure",
-        "title": "DKNet: Dendritic Kernel Convolutional Neural Network for Breast Ultrasound Images Segmentation",
+        "title": "Dendritic Kernel Convolutional Neural Network for Breast Ultrasound Images Segmentation",
         "authors": [
             {
                 "name": "Han Zhang",
@@ -515,11 +515,82 @@
         ],
         "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
         "date": "Dec. 2025",
-        "intro": "This paper proposes a novel Dendritic Kernel Convolution (D-convolution) module inspired by the nonlinear excitatory and inhibitory mechanisms of biological dendrites. Integrated into a three-stage network (DKNet), it mimics the human visual system’s coarse-to-fine processing for breast ultrasound image segmentation. D-convolution enhances feature representation, suppresses noise, and enables more precise boundary detection by modeling synaptic thresholds and multi-branch dendritic integration. Experimental results on public datasets show that DKNet outperforms state-of-the-art methods in accuracy, robustness, and segmentation quality. These findings demonstrate the potential of biologically inspired architectures for challenging medical imaging tasks.",
+        "intro": "This paper proposes a novel Dendritic Kernel Convolution (D-convolution) module inspired by the nonlinear excitatory and inhibitory mechanisms of biological dendrites. Integrated into a three-stage network (DKNet), it mimics the human visual system's coarse-to-fine processing for breast ultrasound image segmentation. D-convolution enhances feature representation, suppresses noise, and enables more precise boundary detection by modeling synaptic thresholds and multi-branch dendritic integration. Experimental results on public datasets show that DKNet outperforms state-of-the-art methods in accuracy, robustness, and segmentation quality. These findings demonstrate the potential of biologically inspired architectures for challenging medical imaging tasks.",
         "editor": "Zhenyu Lei",
         "editDate": "2025/10/15",
         "paperLink": "https://ieeexplore.ieee.org/document/11203775",
         "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DKNet_Code.zip",
         "BibTex":"DKNet.bib"
+    },
+    "JAIA": {
+        "imageSrc": "./image/collections/JAIA.png",
+        "imageAlt": "Framework Figure",
+        "title": "Dendritic Learning for AI: A Survey of Models, Algorithms, Applications, and Future Directions",
+        "authors": [
+            
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Wenzhu Gu",
+                "link": null
+            },    
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "Journal of Artificial Intelligence for Automation",
+        "date": "Mar. 2026",
+        "intro": "This paper presents a comprehensive survey of dendritic learning, encompassing its architectures, learning algorithms, and application domains. The main contents of this survey include: the neuroscience fundamentals of dendrites, a systematic review of existing dendritic learning architectures from the perspectives of dendritic plasticity and morphology, biologically plausible dendritic learning rules, a summary of real-world applications of dendritic learning, and an exploration of open questions and potential research directions in this field.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2026/03/18",
+        "paperLink": "https://www.sciltp.com/journals/jaia/articles/2603003279",
+        "codeLink": null,
+        "BibTex":"JAIA.bib"
+    },
+    "SNDEII": {
+        "imageSrc": "./image/collections/SNDE-II.png",
+        "imageAlt": "Framework Figure",
+        "title": "An Enhanced Scale-Free Differential Evolution for Dendritic Neural Network Training",
+        "authors": [
+            {
+                "name": "Yang Yu",
+                "link": null
+            },
+            {
+                "name": "Tengfei Zhang",
+                "link": null
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Ziqian Wang",
+                "link": "https://scholar.google.com/citations?user=W1WlWS8AAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Yirui Wang",
+                "link": "https://scholar.google.com/citations?user=qApJMv8AAAAJ&hl=zh-CN"
+            },
+            {
+                "name": "Bo Song",
+                "link": null
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+        "date": "Apr. 2026",
+        "intro": "This paper proposes a differential evolution algorithm with a scale-free network-based mutation operator (SNDE-II) for parameter training of machine learning models. The method is applied to dendritic neural networks and their variants, aiming to improve optimization in complex nonlinear search spaces where conventional training methods may be ineffective. By leveraging the strong global search capability of evolutionary algorithms, the proposed approach enhances both optimization performance and robustness.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2026/04/21",
+        "paperLink": null,
+        "codeLink": null,
+        "BibTex":"SNDEII.bib"
     }
 }
