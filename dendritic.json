@@ -589,7 +589,7 @@
         "intro": "This paper proposes a differential evolution algorithm with a scale-free network-based mutation operator (SNDE-II) for parameter training of machine learning models. The method is applied to dendritic neural networks and their variants, aiming to improve optimization in complex nonlinear search spaces where conventional training methods may be ineffective. By leveraging the strong global search capability of evolutionary algorithms, the proposed approach enhances both optimization performance and robustness.",
         "editor": "Zhenyu Lei",
         "editDate": "2026/04/21",
-        "paperLink": null,
+        "paperLink": "https://ieeexplore.ieee.org/document/11493748",
         "codeLink": null,
         "BibTex":"SNDEII.bib"
     }
