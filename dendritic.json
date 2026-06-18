@@ -1,132 +1,127 @@
 {
     "related_work": {
-        "paper1":{
-            "authors":"Spyridon Chavlis and Panayiota Poirazi",
-            "title":"Dendrites endow artificial neural networks with accurate, robust and parameter-efficient learning",
-            "journal":"Nature Communications",
-            "vol":"16(1): p. 943, 2025",
-            "date":"Jan. 2025",
-            "doi":"https://doi.org/10.1038/s41467-025-56297-9"
+        "paper1": {
+            "authors": "Spyridon Chavlis and Panayiota Poirazi",
+            "title": "Dendrites endow artificial neural networks with accurate, robust and parameter-efficient learning",
+            "journal": "Nature Communications",
+            "vol": "16(1): p. 943, 2025",
+            "date": "Jan. 2025",
+            "doi": "https://doi.org/10.1038/s41467-025-56297-9"
         },
-        "paper2":{
-            "authors":"Eunhye Baek, et al.",
-            "title":"Neuromorphic dendritic network computation with silent synapses for visual motion perception",
-            "journal":"Nature Electronics",
-            "vol":"7(1): pp. 454-465, 2024",
+        "paper2": {
+            "authors": "Eunhye Baek, et al.",
+            "title": "Neuromorphic dendritic network computation with silent synapses for visual motion perception",
+            "journal": "Nature Electronics",
+            "vol": "7(1): pp. 454-465, 2024",
             "date": "Jun. 2024",
-            "doi":"https://doi.org/10.1038/s41928-024-01171-7"
+            "doi": "https://doi.org/10.1038/s41928-024-01171-7"
         },
-        "paper3":{
-            "authors":"Michalis Pagkalos, et al.",
-            "title":"Introducing the Dendrify framework for incorporating dendrites to spiking neural networks",
-            "journal":"Nature Communications",
-            "vol":"14(1): p. 131, 2023",
+        "paper3": {
+            "authors": "Michalis Pagkalos, et al.",
+            "title": "Introducing the Dendrify framework for incorporating dendrites to spiking neural networks",
+            "journal": "Nature Communications",
+            "vol": "14(1): p. 131, 2023",
             "date": "Jan. 2023",
-            "doi":"https://doi.org/10.1038/s41467-022-35747-8"
+            "doi": "https://doi.org/10.1038/s41467-022-35747-8"
         },
-        "paper4":{
-            "authors":"Capone, C., et al.",
-            "title":"Beyond spiking networks: The computational advantages of dendritic amplification and input segregation",
-            "journal":"Proceedings of the National Academy of Sciences",
-            "vol":"120(49): p. e2220743120, 2023",
+        "paper4": {
+            "authors": "Capone, C., et al.",
+            "title": "Beyond spiking networks: The computational advantages of dendritic amplification and input segregation",
+            "journal": "Proceedings of the National Academy of Sciences",
+            "vol": "120(49): p. e2220743120, 2023",
             "date": "Oct. 2023",
-            "doi":"https://doi.org/10.1073/pnas.2220743120"
+            "doi": "https://doi.org/10.1073/pnas.2220743120"
         },
-        "paper5":{
-            "authors":"Giorgia Dellaferrera, et al.",
-            "title":"Introducing principles of synaptic integration in the optimization of deep neural networks",
-            "journal":"Nature Communications",
-            "vol":"13(1): p. 1885, 2022",
+        "paper5": {
+            "authors": "Giorgia Dellaferrera, et al.",
+            "title": "Introducing principles of synaptic integration in the optimization of deep neural networks",
+            "journal": "Nature Communications",
+            "vol": "13(1): p. 1885, 2022",
             "date": "Apr. 2022",
-            "doi":"https://doi.org/10.1038/s41467-022-29491-2"
+            "doi": "https://doi.org/10.1038/s41467-022-29491-2"
         },
-        "paper6":{
-            "authors":"Florian Stelzer, et al.",
-            "title":"Deep neural networks using a single neuron: folded-in-time architecture using feedback-modulated delay loops",
-            "journal":"Nature communications",
-            "vol":"12(1): p. 5164, 2021",
+        "paper6": {
+            "authors": "Florian Stelzer, et al.",
+            "title": "Deep neural networks using a single neuron: folded-in-time architecture using feedback-modulated delay loops",
+            "journal": "Nature communications",
+            "vol": "12(1): p. 5164, 2021",
             "date": "Aug. 2021",
-            "doi":"https://doi.org/10.1038/s41467-021-25427-4"
+            "doi": "https://doi.org/10.1038/s41467-021-25427-4"
         },
-        "paper7":{
-            "authors":"Andrew Saxe, et al.",
-            "title":"If deep learning is the answer, what is the question?",
-            "journal":"Nature Reviews Neuroscience",
-            "vol":"22(1): p. 55-67, 2021",
+        "paper7": {
+            "authors": "Andrew Saxe, et al.",
+            "title": "If deep learning is the answer, what is the question?",
+            "journal": "Nature Reviews Neuroscience",
+            "vol": "22(1): p. 55-67, 2021",
             "date": "Jan. 2021",
-            "doi":"https://doi.org/10.1038/s41583-020-00395-8"
+            "doi": "https://doi.org/10.1038/s41583-020-00395-8"
         },
-        "paper8":{
-            "authors":"J. Goltz, et al.",
-            "title":"Fast and energy-efficient neuromorphic deep learning with first-spike times",
-            "journal":"Nature Machine Intelligence",
-            "vol":"3(9): pp. 823-835, 2021",
+        "paper8": {
+            "authors": "J. Goltz, et al.",
+            "title": "Fast and energy-efficient neuromorphic deep learning with first-spike times",
+            "journal": "Nature Machine Intelligence",
+            "vol": "3(9): pp. 823-835, 2021",
             "date": "Sep. 2021",
-            "doi":"https://doi.org/10.1038/s42256-021-00388-x"
+            "doi": "https://doi.org/10.1038/s42256-021-00388-x"
         },
-        "paper9":{
-            "authors":"Laurence Aitchison, et al.",
-            "title":"Synaptic plasticity as Bayesian inference",
-            "journal":"Nature Neuroscience",
-            "vol":"24(4): pp. 565-571, 2021",
+        "paper9": {
+            "authors": "Laurence Aitchison, et al.",
+            "title": "Synaptic plasticity as Bayesian inference",
+            "journal": "Nature Neuroscience",
+            "vol": "24(4): pp. 565-571, 2021",
             "date": "Sep. 2021",
-            "doi":"https://doi.org/10.1038/s41593-021-00809-5"
+            "doi": "https://doi.org/10.1038/s41593-021-00809-5"
         },
-
-        "paepr10":{
-            "authors":"Albert Gidon, et al.",
-            "title":"Dendritic action potentials and computation in human layer 2/3 cortical neurons",
-            "journal":"Science",
-            "vol":"367(6473): pp. 83-87, 2020",
+        "paepr10": {
+            "authors": "Albert Gidon, et al.",
+            "title": "Dendritic action potentials and computation in human layer 2/3 cortical neurons",
+            "journal": "Science",
+            "vol": "367(6473): pp. 83-87, 2020",
             "date": "Jan. 2020",
-            "doi":"https://doi.org/10.1126/science.aax6239"
+            "doi": "https://doi.org/10.1126/science.aax6239"
         },
-        
-        "paper11":{
-            "authors":"Stanislaw Wozniak, et al.",
-            "title":"Deep learning incorporating biologically inspired neural dynamics and in-memory computing",
-            "journal":"Nature Machine Intelligence",
-            "vol":"2(6): pp. 325-336, 2020",
+        "paper11": {
+            "authors": "Stanislaw Wozniak, et al.",
+            "title": "Deep learning incorporating biologically inspired neural dynamics and in-memory computing",
+            "journal": "Nature Machine Intelligence",
+            "vol": "2(6): pp. 325-336, 2020",
             "date": "Jun. 2020",
-            "doi":"https://doi.org/10.1038/s42256-020-0187-0"
+            "doi": "https://doi.org/10.1038/s42256-020-0187-0"
         },
-
-        "paper12":{
-            "authors":"Xinyi Li, et al.",
-            "title":"Power-efficient neural network with artificial dendrites",
-            "journal":"Nature Nanotechnology",
-            "vol":"15(9): pp. 776-782, 2020",
+        "paper12": {
+            "authors": "Xinyi Li, et al.",
+            "title": "Power-efficient neural network with artificial dendrites",
+            "journal": "Nature Nanotechnology",
+            "vol": "15(9): pp. 776-782, 2020",
             "date": "Jun. 2020",
-            "doi":"https://doi.org/10.1038/s41565-020-0722-5"
+            "doi": "https://doi.org/10.1038/s41565-020-0722-5"
         },
-        "paper13":{
-            "authors":"Alexandre Payeur, et al.",
-            "title":"Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits",
-            "journal":"Nature Neuroscience",
-            "vol":"24(1): pp. 1010-1019, 2021",
+        "paper13": {
+            "authors": "Alexandre Payeur, et al.",
+            "title": "Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits",
+            "journal": "Nature Neuroscience",
+            "vol": "24(1): pp. 1010-1019, 2021",
             "date": "May. 2021",
-            "doi":"https://doi.org/10.1038/s41593-021-00857-x"
+            "doi": "https://doi.org/10.1038/s41593-021-00857-x"
         },
-        "paper14":{
-            "authors":"Simone D'Agostino, et al.",
-            "title":"DenRAM: neuromorphic dendritic architecture with RRAM for efficient temporal processing with delays",
-            "journal":"Nature Communications",
-            "vol":"15(1): p. 3446, 2024",
+        "paper14": {
+            "authors": "Simone D'Agostino, et al.",
+            "title": "DenRAM: neuromorphic dendritic architecture with RRAM for efficient temporal processing with delays",
+            "journal": "Nature Communications",
+            "vol": "15(1): p. 3446, 2024",
             "date": "Apr. 2024",
-            "doi":"https://doi.org/10.1038/s41467-024-47764-w"
+            "doi": "https://doi.org/10.1038/s41467-024-47764-w"
         },
-		"paper15":{
-            "authors":"Poirazi, P. and A. Papoutsi",
-            "title":"Illuminating dendritic function with computational models",
-            "journal":"Nature Reviews Neuroscience",
-            "vol":"21(6): pp. 303-321, 2020",
+        "paper15": {
+            "authors": "Poirazi, P. and A. Papoutsi",
+            "title": "Illuminating dendritic function with computational models",
+            "journal": "Nature Reviews Neuroscience",
+            "vol": "21(6): pp. 303-321, 2020",
             "date": "May. 2020",
-            "doi":"https://www.nature.com/articles/s41583-020-0301-7"
+            "doi": "https://www.nature.com/articles/s41583-020-0301-7"
         },
         "date": "Feb. 2000"
-        
     },
-
     "DNM": {
         "imageSrc": "./image/collections/DNM.jpg",
         "imageAlt": "Framework Figure",
@@ -164,7 +159,7 @@
         "editDate": "2024/10/10",
         "paperLink": "https://doi.org/10.1109/TNNLS.2018.2846646",
         "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DNM_Code.zip",
-        "BibTex":"DNM.bib"
+        "BibTex": "DNM.bib"
     },
     "DSNDE": {
         "imageSrc": "./image/collections/DSNDE.jpg",
@@ -203,7 +198,7 @@
         "editDate": "2024/10/10",
         "paperLink": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2021.1004284",
         "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DSNDE_Code.zip",
-        "BibTex":"DSNDE.bib"
+        "BibTex": "DSNDE.bib"
     },
     "CDNM": {
         "imageSrc": "./image/collections/CDNM.jpg",
@@ -246,7 +241,7 @@
         "editDate": "2024/10/10",
         "paperLink": "https://doi.org/10.1109/TNNLS.2021.3105901",
         "codeLink": null,
-        "BibTex":"CDNM.bib"
+        "BibTex": "CDNM.bib"
     },
     "DVT": {
         "imageSrc": "./image/collections/DVT.gif",
@@ -281,7 +276,7 @@
         "editDate": "2024/01/19",
         "paperLink": "https://www.ieee-jas.net/en/article/id/ec6a16fa-d348-417a-af0f-dd734c60439c",
         "codeLink": "https://github.com/zhangzm0128/DVT",
-        "BibTex":"DVT.bib"
+        "BibTex": "DVT.bib"
     },
     "DDNet": {
         "imageSrc": "./image/collections/DDNet.png",
@@ -320,7 +315,7 @@
         "editDate": "2024/01/19",
         "paperLink": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2023.123813",
         "codeLink": "https://github.com/lzp990616/DDNet",
-        "BibTex":"DDNet.bib"
+        "BibTex": "DDNet.bib"
     },
     "MDPN": {
         "imageSrc": "./image/collections/MDPN.gif",
@@ -359,7 +354,7 @@
         "editDate": "2024/05/27",
         "paperLink": "https://doi.org/10.1109/TAI.2024.3379968",
         "codeLink": "https://github.com/zy-251026/MDPN",
-        "BibTex":"MDPN.bib"
+        "BibTex": "MDPN.bib"
     },
     "ADNS": {
         "imageSrc": "./image/collections/ADNS.png",
@@ -398,8 +393,7 @@
         "editDate": "2024/10/10",
         "paperLink": "https://doi.org/10.1109/TAI.2024.3416236",
         "codeLink": "https://github.com/Rirock/ADNS",
-        "BibTex":"ADNS.bib"
-        
+        "BibTex": "ADNS.bib"
     },
     "QDNM": {
         "imageSrc": "./image/collections/QDNM.jpg",
@@ -438,7 +432,7 @@
         "editDate": "2024/12/25",
         "paperLink": "https://doi.org/10.1109/TETCI.2024.3485728",
         "codeLink": null,
-        "BibTex":"QDNM.bib"
+        "BibTex": "QDNM.bib"
     },
     "GGDNM": {
         "imageSrc": "./image/collections/GGDNM.jpg",
@@ -477,7 +471,7 @@
         "editDate": "2025/04/01",
         "paperLink": "https://ieeexplore.ieee.org/document/10949863",
         "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/TNSE_Code.zip",
-        "BibTex":"GGDNM.bib"
+        "BibTex": "GGDNM.bib"
     },
     "DKNet": {
         "imageSrc": "./image/collections/DKNet.png",
@@ -503,7 +497,7 @@
             {
                 "name": "Ziqian Wang",
                 "link": null
-            },    
+            },
             {
                 "name": "Hideyuki Hasegawa",
                 "link": null
@@ -520,14 +514,13 @@
         "editDate": "2025/10/15",
         "paperLink": "https://ieeexplore.ieee.org/document/11203775",
         "codeLink": "https://raw.githubusercontent.com/toyamaailab/toyamaailab.github.io/main/resource/DKNet_Code.zip",
-        "BibTex":"DKNet.bib"
+        "BibTex": "DKNet.bib"
     },
     "JAIA": {
         "imageSrc": "./image/collections/JAIA.png",
         "imageAlt": "Framework Figure",
         "title": "Dendritic Learning for AI: A Survey of Models, Algorithms, Applications, and Future Directions",
         "authors": [
-            
             {
                 "name": "Zhenyu Lei",
                 "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
@@ -535,7 +528,7 @@
             {
                 "name": "Wenzhu Gu",
                 "link": null
-            },    
+            },
             {
                 "name": "Shangce Gao",
                 "link": "https://toyamaailab.github.io/"
@@ -548,7 +541,7 @@
         "editDate": "2026/03/18",
         "paperLink": "https://www.sciltp.com/journals/jaia/articles/2603003279",
         "codeLink": null,
-        "BibTex":"JAIA.bib"
+        "BibTex": "JAIA.bib"
     },
     "SNDEII": {
         "imageSrc": "./image/collections/SNDE-II.png",
@@ -591,6 +584,45 @@
         "editDate": "2026/04/21",
         "paperLink": "https://ieeexplore.ieee.org/document/11493748",
         "codeLink": null,
-        "BibTex":"SNDEII.bib"
+        "BibTex": "SNDEII.bib"
+    },
+    "CADNet": {
+        "imageSrc": "./image/collections/CADNet.png",
+        "imageAlt": "Framework Figure",
+        "title": "A Novel Neural Architecture With Multilevel Feature Extraction Coordinated by Dendritic Classifier",
+        "authors": [
+            {
+                "name": "Jun Liu",
+                "link": null
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Zhiming Zhang",
+                "link": "https://zhangzm0128.github.io"
+            },
+            {
+                "name": "Jiujun Cheng",
+                "link": null
+            },
+            {
+                "name": "Dongbao Jia",
+                "link": null
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+        "date": "Jun. 2026",
+        "intro": "This paper proposes CADNet, a novel image classification network that integrates convolution, attention mechanisms, and an innovative dendritic classifier. Unlike traditional models that focus only on fine-grained features, this framework effectively preserves and fuses rich coarse-grained information such as edges and textures. By utilizing the uniquely designed dendritic classifier, CADNet can process high-dimensional inputs and extract vital spatial information without the heavy computational overhead of standard channel-wise fusion. Experimental results demonstrate that this approach consistently achieves state-of-the-art (SOTA) performance across multiple authoritative datasets.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2026/06/18",
+        "paperLink": "https://doi.org/10.1109/TSMC.2026.3703975",
+        "codeLink": null,
+        "BibTex": "CADNet.bib"
     }
 }
