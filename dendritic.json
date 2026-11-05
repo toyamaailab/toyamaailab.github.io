@@ -605,8 +605,47 @@
         "intro": "This paper proposes a differential evolution algorithm with a scale-free network-based mutation operator (SNDE-II) for parameter training of machine learning models. The method is applied to dendritic neural networks and their variants, aiming to improve optimization in complex nonlinear search spaces where conventional training methods may be ineffective. By leveraging the strong global search capability of evolutionary algorithms, the proposed approach enhances both optimization performance and robustness.",
         "editor": "Zhenyu Lei",
         "editDate": "2026/04/21",
-        "paperLink": null,
+        "paperLink": "https://ieeexplore.ieee.org/document/11493748",
         "codeLink": null,
         "BibTex":"SNDEII.bib"
+    },
+    "CADNet": {
+        "imageSrc": "./image/collections/CADNet.png",
+        "imageAlt": "Framework Figure",
+        "title": "A Novel Neural Architecture With Multilevel Feature Extraction Coordinated by Dendritic Classifier",
+        "authors": [
+            {
+                "name": "Jun Liu",
+                "link": null
+            },
+            {
+                "name": "Zhenyu Lei",
+                "link": "https://scholar.google.com/citations?user=7Ss6peAAAAAJ&hl=zh-CN&oi=sra"
+            },
+            {
+                "name": "Zhiming Zhang",
+                "link": "https://zhangzm0128.github.io"
+            },
+            {
+                "name": "Jiujun Cheng",
+                "link": null
+            },
+            {
+                "name": "Dongbao Jia",
+                "link": null
+            },
+            {
+                "name": "Shangce Gao",
+                "link": "https://toyamaailab.github.io/"
+            }
+        ],
+        "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+        "date": "Jun. 2026",
+        "intro": "This paper proposes CADNet, a novel image classification network that integrates convolution, attention mechanisms, and an innovative dendritic classifier. Unlike traditional models that focus only on fine-grained features, this framework effectively preserves and fuses rich coarse-grained information such as edges and textures. By utilizing the uniquely designed dendritic classifier, CADNet can process high-dimensional inputs and extract vital spatial information without the heavy computational overhead of standard channel-wise fusion. Experimental results demonstrate that this approach consistently achieves state-of-the-art (SOTA) performance across multiple authoritative datasets.",
+        "editor": "Zhenyu Lei",
+        "editDate": "2026/06/18",
+        "paperLink": "https://doi.org/10.1109/TSMC.2026.3703975",
+        "codeLink": null,
+        "BibTex": "CADNet.bib"
     }
 }
